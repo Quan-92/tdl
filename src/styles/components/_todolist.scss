@@ -1,0 +1,108 @@
+body {
+  background-image: url("https://blog.hubspot.com/hubfs/To_Do_List.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Sans serif';
+}
+.main-div {
+  width: 30vw;
+  height: 88.5vh;
+  margin: auto;
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 1em;
+  .child-div {
+    width: 10vw;
+    height: 30vh;
+    margin: auto;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    figure {
+      padding: 4px;
+      margin: auto;
+      img {
+        height: 6em;
+      }
+    }
+  }
+
+  .form-div {
+    margin: auto;
+    width: 30vw;
+    height: 60vh;
+    background-color: rgb(178, 92, 192);
+    border-radius: 1em;
+    padding-top: 1em;
+    .form-child {
+      height: 5.5vh;
+      width: 20vw;
+      margin: auto;
+      border: 3px solid rgb(167, 164, 164);
+      border-radius: 0.5em;
+      background-color: #fff;
+      #add-task {
+        height: 4vh;
+        width: 75%;
+        padding-left: 10px;
+        border-radius: 0.3em 0 0 0.3em;
+        border: none;
+        background-color: rgb(155, 236, 225);
+        margin-left: 5px;
+        outline: none;
+      }
+      #click-add {
+        height: 5vh;
+        width: 17%;
+        border: 3px solid white;
+        margin-top: 2px;
+        padding-bottom: 3px;
+        margin-left: 5px;
+        border-radius: 0 0.5em 0.5em 0;
+        background-color: #fff;
+        font-family: "Comic Sans MS";
+        font-weight: 900;
+        color: #fff;
+        background-color: rgb(83, 164, 164);
+      }
+    }
+    .list-add {
+      height: 50vh;
+      overflow: hidden;
+      ul {
+        height: 100%;
+        margin-right: -20px;
+        overflow-y: scroll;
+        list-style: none;
+        padding-right: 2em;
+        li {
+          margin-bottom: 20px;
+          font-size: 25px;
+          color: rgb(213, 242, 254);
+          border-bottom: 2px solid black;
+          .click-job {
+            background-color: rgb(178, 92, 192);
+            border: 2px solid rgb(178, 92, 192);
+            border-radius: 25px;
+            font-size: 22px;
+            font-weight: 900;            
+          }
+          .completed {
+            color: rgb(108, 255, 164);
+            margin-right: 5px;
+          }
+          .edit {
+            color: rgb(75, 255, 246);
+            float: right;
+            margin-right: 5px;
+          }
+          .delete {
+            color: rgb(250, 219, 46);
+            float: right;
+          }
+        }
+      }
+    }
+  }
+}
